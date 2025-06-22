@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Afsana Akter Mitu - Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .slider {
+      position: relative;
+      max-width: 900px;
+      height: 300px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .slider img {
+      position: absolute;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      opacity: 0;
+      animation: fade 12s infinite;
+    }
+
+    .slider img:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .slider img:nth-child(2) {
+      animation-delay: 4s;
+    }
+    .slider img:nth-child(3) {
+      animation-delay: 8s;
+    }
+
+    @keyframes fade {
+      0%   {opacity: 0;}
+      8%   {opacity: 1;}
+      33%  {opacity: 1;}
+      41%  {opacity: 0;}
+      100% {opacity: 0;}
+    }
+
+    /* Text overlay above slider */
+    .slider-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      pointer-events: none; /* so clicks pass through */
+      user-select: none;
+    }
+
+    nav {
+      background-color: #002244;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      border-radius: 6px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 15px;
+    }
+
+    .education-entry {
+      margin-bottom: 25px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      max-width: 900px;
+      margin: 40px auto 20px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider">
+    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=900&q=80" alt="Books Slide 1" />
+    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=80" alt="Books Slide 2" />
+    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=80" alt="Books Slide 3" />
+
+    <div class="slider-text">Afsana Akter Mitu</div>
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am Afsana Akter Mitu, currently a 4th-year 1st semester student in the Department of Information and Communication Technology at Mawlana Bhashani Science and Technology University, Tangail, Bangladesh. I have a deep interest in data science, cybersecurity, and software development, and enjoy solving complex problems and building efficient systems.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-entry">
+      <strong>Bachelor of Science (B.Sc Engg.) in Information and Communication Technology</strong><br />
+      Department of Information and Communication Technology,<br />
+      Mawlana Bhashani Science and Technology University, Tangail, Bangladesh<br />
+      <em>4th Year 1st Semester</em><br />
+      <strong>CGPA:</strong> 3.01
+    </div>
+
+    <div class="education-entry">
+      <strong>Higher Secondary School Certificate (HSC), Science Group</strong><br />
+      Vivekananda High School and College<br />
+      <strong>GPA:</strong> 4.25<br />
+      <strong>Passing Year:</strong> 2019
+    </div>
+    <div class="education-entry">
+      <strong>Secondary School Certificate (SSC), Science Group</strong><br />
+      Vivekananda High School and College<br />
+      <strong>GPA:</strong> 5.00<br />
+      <strong>Passing Year:</strong> 2017
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me via email at: <strong>it21007@mbstu.ac.bd</strong></p>
+    <p>Or connect with me on <a href="#">LinkedIn</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Afsana Akter Mitu. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
